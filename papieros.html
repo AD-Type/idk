@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>moja opinia, zadanie iv</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+   
+<p>W ostatnich latach e-papierosy stały się bardzo popularne wśród nastolatków. Ja jednak nie popieram ich używania.</p>
+
+<p>Uważam, że e-papierosy są szkodliwe dla zdrowia, mimo że często przedstawia się je jako mniej niebezpieczne niż tradycyjne papierosy. Zawierają one substancje, które mogą negatywnie wpływać na organizm, szczególnie u młodych osób.</p>
+
+<p>Dodatkowo ich używanie może prowadzić do uzależnienia od nikotyny. Wiele osób zaczyna traktować e-papierosy jako coś nieszkodliwego, co nie jest prawdą. Może to prowadzić do poważnych problemów zdrowotnych w przyszłości.</p>
+
+<p>Najgorsze jest to, że e-papierosy stały się tak popularne w Polsce, że nawet niektóre dzieci w szkołach podstawowych zaczęły ich używać, co jest bardzo niepokojące.</p>
+
+<p>Moim zdaniem należy ograniczać używanie e-papierosów, szczególnie wśród młodzieży, oraz zwiększać świadomość na temat ich szkodliwości.</p>
+
+<p><strong>Podsumowując:</strong> e-papierosy nie są dobrym rozwiązaniem i nie powinny być traktowane jako bezpieczna alternatywa.</p>
+<h2>Liczba odwiedzin: <span id="licznik">0</span></h2>
+</div>
+<script>
+
+let licznik = localStorage.getItem("licznik");
+
+
+
+if (licznik === null) {
+
+licznik = 1;
+
+} else {
+
+licznik = parseInt(licznik) + 1;
+
+}
+
+
+
+localStorage.setItem("licznik", licznik);
+
+document.getElementById("licznik").innerText = licznik;
+
+</script>
+
+
+</body>
+</html>
